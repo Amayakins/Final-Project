@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+     type="image/png"
+     href="logo.png">
+    </head>
+
+  <body style= "background-color: #f4ebff;">
+
+    <!-- Header -->
+<div class="header">
+  <font face="ClementePDaa" size=30>
+  <h1>Youth Society</h1>
+  <center>Give back to the community.</center>
+
+</div>
+<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></center>
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+   </div>
+    <div class="container">
+      <font face="ClementePDaa" size=10>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <center><a href="profile.html">Login</a></center>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img src="community.jpg" style="width:100%">
+    <img src="community2.jpg" style="width:100%">
+    <img src="community3.jpg" style="width:100%">
+    <img src="community8.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="community5.jpg" style="width:100%">
+    <img src="community6.jpg" style="width:100%">
+    <img src="community7.jpg" style="width:100%">
+    <img src="community12.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="community4.jpg" style="width:100%">
+    <img src="community9.jpg" style="width:100%">
+    <img src="community13.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="community10.jpg" style="width:190%">
+    <img src="community11.jpg" style="width:190%">
+  </div>
+</div>
+    </body>
+
+</html>
